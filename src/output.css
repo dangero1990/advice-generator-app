@@ -622,7 +622,7 @@ body {
 
 main {
   background-color: var(--Dark_Grayish_Blue);
-  width: 65ch;
+  max-width: 80%;
 }
 
 h1 {
@@ -632,6 +632,7 @@ h1 {
 
 p {
   font-size: 1.75rem;
+  max-width: 65ch;
 }
 
 p::before,

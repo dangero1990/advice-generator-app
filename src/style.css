@@ -1,0 +1,56 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  /* Primary */
+  --Light_Cyan: hsl(193, 38%, 86%);
+  --Neon_Green: hsl(150, 100%, 66%);
+
+  /* Neutral */
+  --Grayish_Blue: hsl(217, 19%, 38%);
+  --Dark_Grayish_Blue: hsl(217, 19%, 24%);
+  --Dark_Blue: hsl(218, 23%, 16%);
+}
+
+body {
+  background-color: var(--Dark_Blue);
+  font-family: 'Manrope', sans-serif;
+  color: var(--Light_Cyan);
+}
+
+main {
+  background-color: var(--Dark_Grayish_Blue);
+  width: 65ch;
+}
+
+h1 {
+  color: var(--Neon_Green);
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.75rem;
+}
+
+p::before,
+P::after {
+  content: '"';
+}
+
+#dice {
+  background-color: var(--Neon_Green);
+}
+
+#dice:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px var(--Light_Cyan);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--Neon_Green);
+}
